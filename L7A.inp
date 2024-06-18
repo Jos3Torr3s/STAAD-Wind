@@ -1,5 +1,5 @@
 # Name of structure
-structure = 'L7A jacket'
+structure = 'Q1 module'
 
 case  = [  'LOAD-IN X' ,  'LOAD-IN Z' ,  'STORAGE X' ,  'STORAGE Z' ]
 # ---------------------------------------------------------------------
@@ -12,36 +12,37 @@ head  = [      'X'     ,      'Z'     ,      'X'     ,      'Z'     ]
 # Reference wind speed (jacking/load-in: 15, storage: 25):
 Vref  = [      15      ,      15      ,      25      ,      25      ]
 
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # STAAD Model base level (y-coord):
-Y0    = [     -42.4    ,     -42.4    ,     -42.4    ,     -42.4    ]
+Y0    = [       4.5    ,       4.5    ,       4.5    ,       4.5    ]
 
 # Height of support (TBs):
 H1    = [       1.5   ,        1.5    ,       1.5    ,       1.5    ]
 
 # Height of structure (without TBs):
-H2    = [      47.5   ,       47.5    ,      47.5    ,      47.5    ]
+H2    = [      18.1   ,       18.1    ,      18.1    ,      18.1    ]
 
 # Bottom width of structure:
-W1    = [      17.85  ,       15.88   ,      17.85   ,      15.88   ]
+W1    = [      15.00  ,       15.00   ,      15.00   ,      15.00   ]
 
 # Top width of structure:
-W2    = [      11.76  ,       10.28   ,      11.76   ,      10.28   ]
+W2    = [      21.03  ,       28.04   ,      21.03   ,      28.04   ]
 
 # Massivity factor:
 Mfact = [       0.4   ,        0.4    ,       0.4    ,       0.4    ]
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# X range (entire STAAD model)
+xrng  = [ (-16.6, 16.6), (-16.6, 16.6), (-16.6, 16.6), (-16.6, 16.6)]
+
+# Y range (entire STAAD model)
+yrng  = [ (  4.5, 24.1), (  4.5, 24.1), (  4.5, 24.1), (  4.5, 24.1)]
+
+# Z range (entire STAAD model)
+zrng  = [ (-15.5, 13.0), (-15.5, 13.0), (-15.5, 13.0), (-15.5, 13.0)]
+
 # Generated wind force in STAAD:
 Fwind = [      96.75  ,       98.14   ,     627.94   ,     637.02   ]
 
 # Center of wind load, y-coord, STAAD:
 Hw    = [      -0.13   ,      -0.13   ,      -0.13   ,      -0.13   ]
-
-# X range (entire STAAD model)
-xrng  = [ (-10.0, 10.0), (-10.0, 10.0), (-10.0, 10.0), (-10.0, 10.0)]
-
-# Y range (entire STAAD model)
-yrng  = [ (-10.0, 10.0), (-10.0, 10.0), (-10.0, 10.0), (-10.0, 10.0)]
-
-# Z range (entire STAAD model)
-zrng  = [ (-10.0, 10.0), (-10.0, 10.0), (-10.0, 10.0), (-10.0, 10.0)]
