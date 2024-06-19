@@ -95,8 +95,7 @@ for file in files:
         print('   ', 32*'-', case[i], 37*'-')
         print('    TYPE', stage[i], 'Storage' if stage[i] == 2\
                                      else 'Load-in')
-        print('    INT', ' '.join(map(str,_qb_)))
-        print('    HEIG', ' '.join(map(str,_Z_)))
+        print('    INT', ' '.join(map(str,_qb_)),'HEIG', ' '.join(map(str,_Z_)))
         print()
         print('    LOAD # LOADTYPE Wind TITLE WIND', case[i])
         print('    WIND LOAD', head[i], S, 'TYPE', stage[i],\
