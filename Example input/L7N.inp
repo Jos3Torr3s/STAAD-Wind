@@ -1,0 +1,47 @@
+# Name of structure
+structure = 'L7N jacket'
+
+case  = [  'LOAD-IN X' ,  'LOAD-IN Z' ,  'STORAGE X' ,  'STORAGE Z' ]
+# ---------------------------------------------------------------------
+# Stage (set down → 1, storage → 2):
+stage = [       1      ,       1      ,       2      ,       2      ]
+
+# Direction of wind:
+head  = [      'X'     ,      'Z'     ,      'X'     ,      'Z'     ]
+
+# Reference wind speed (jacking/load-in: 15, storage: 25):
+Vref  = [      15      ,      15      ,      25      ,      25      ]
+
+# STAAD Model base level (y-coord):
+Y0    = [     -39.9    ,     -39.9    ,     -39.9    ,     -39.9    ]
+
+# Height of support (TBs):
+H1    = [       1.5   ,        1.5    ,       1.5    ,       1.5    ]
+
+# Height of structure (without TBs):
+H2    = [      46.4   ,       46.4    ,      46.4    ,      46.4    ]
+
+# Bottom width of structure:
+W1    = [      17.49  ,       17.75   ,      17.49   ,      17.75   ]
+
+# Top width of structure:
+W2    = [      12.05  ,       12.25   ,      12.05   ,      12.25   ]
+
+# Massivity factor:
+Mfact = [       0.4   ,        0.4    ,       0.4    ,       0.4    ]
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# Generated wind force in STAAD:
+Fwind = [      91.85  ,       92.88   ,     597.61   ,     602.74   ]
+
+# Center of wind load, y-coord, STAAD:
+Hw    = [      -0.12   ,      -0.11   ,      -0.12   ,      -0.11   ]
+
+# X range (entire STAAD model)
+xrng  = [ (-10.0, 10.0), (-10.0, 10.0), (-10.0, 10.0), (-10.0, 10.0)]
+
+# Y range (entire STAAD model)
+yrng  = [ (-10.0, 10.0), (-10.0, 10.0), (-10.0, 10.0), (-10.0, 10.0)]
+
+# Z range (entire STAAD model)
+zrng  = [ (-10.0, 10.0), (-10.0, 10.0), (-10.0, 10.0), (-10.0, 10.0)]
