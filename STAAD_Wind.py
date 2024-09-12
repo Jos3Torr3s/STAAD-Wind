@@ -34,7 +34,7 @@ for file in files:
         # Wind statistics:
         k = 0.2
         n = 0.5
-        p = 0.2 if stage[i] == 2 else 0.9999
+        p = 0.2 #if stage[i] == 2 else 0.9999
         Cprob = ((1-k*ln(-ln(1-p)))/(1-k*ln(-ln(0.98))))**n
         # Wind factors:
         Cdir = 1
@@ -65,8 +65,10 @@ for file in files:
         cr_z_ref = Kr*ln(Zref/Z0)
         vm_zref = cr_z_ref*C0*Vb
         qpref = ce_zref*Density*vm_zref**2/2
+        print('qpref = ', qpref)
         S = round(Ffact*Efact*qpref*Mfact[i]*(W2[i]*H2[i]+\
                   H2[i]*(W1[i]-W2[i])/2)/Fwind[i], 2)
+        #print(Mfact[i]*(W2[i]*H2[i]+(W1[i]-W2[i])/2*H2[i]))
         
         _qb_ = []
         _Z_ = []
